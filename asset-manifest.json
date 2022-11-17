@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.26c59b70.css",
+    "main.js": "/my_portfolio/static/js/main.eedc7a05.js",
+    "static/media/pizza.jpg": "/my_portfolio/static/media/pizza.f2f9b9a49128f877c57f.jpg",
+    "static/media/Reservation.png": "/my_portfolio/static/media/Reservation.fd8714559ae56341cf45.png",
+    "static/media/api.png": "/my_portfolio/static/media/api.868da1cd5d2b93380429.png",
+    "static/media/react.png": "/my_portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/github.png": "/my_portfolio/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/python.png": "/my_portfolio/static/media/python.f638148b03f27d1b4532.png",
+    "static/media/hospital.jpg": "/my_portfolio/static/media/hospital.e73a94f4c2cb9bfafc29.jpg",
+    "static/media/html.png": "/my_portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/css.png": "/my_portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/order.png": "/my_portfolio/static/media/order.24071bd5c845d0df5c11.png",
+    "static/media/laravel.png": "/my_portfolio/static/media/laravel.c2c125241f162d216fa2.png",
+    "static/media/javascript.png": "/my_portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/my_portfolio/index.html",
+    "main.26c59b70.css.map": "/my_portfolio/static/css/main.26c59b70.css.map",
+    "main.eedc7a05.js.map": "/my_portfolio/static/js/main.eedc7a05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26c59b70.css",
+    "static/js/main.eedc7a05.js"
+  ]
+}
