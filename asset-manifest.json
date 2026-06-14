@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.26c59b70.css",
-    "main.js": "/my_portfolio/static/js/main.eedc7a05.js",
+    "main.css": "/my_portfolio/static/css/main.94ab0875.css",
+    "main.js": "/my_portfolio/static/js/main.2b4f5478.js",
     "static/media/pizza.jpg": "/my_portfolio/static/media/pizza.f2f9b9a49128f877c57f.jpg",
     "static/media/Reservation.png": "/my_portfolio/static/media/Reservation.fd8714559ae56341cf45.png",
     "static/media/api.png": "/my_portfolio/static/media/api.868da1cd5d2b93380429.png",
@@ -15,11 +15,11 @@
     "static/media/laravel.png": "/my_portfolio/static/media/laravel.c2c125241f162d216fa2.png",
     "static/media/javascript.png": "/my_portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/my_portfolio/index.html",
-    "main.26c59b70.css.map": "/my_portfolio/static/css/main.26c59b70.css.map",
-    "main.eedc7a05.js.map": "/my_portfolio/static/js/main.eedc7a05.js.map"
+    "main.94ab0875.css.map": "/my_portfolio/static/css/main.94ab0875.css.map",
+    "main.2b4f5478.js.map": "/my_portfolio/static/js/main.2b4f5478.js.map"
   },
   "entrypoints": [
-    "static/css/main.26c59b70.css",
-    "static/js/main.eedc7a05.js"
+    "static/css/main.94ab0875.css",
+    "static/js/main.2b4f5478.js"
   ]
 }
