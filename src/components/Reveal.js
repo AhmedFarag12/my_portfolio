@@ -1,39 +1,22 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
+import useInView from '../hooks/useInView'
 
 /**
- * Wraps children and fades/slides them in once they scroll into view.
- * Usage: <Reveal delay={150}> ...content... </Reveal>
+ * Fades/slides children in once they scroll into view.
+ * Usage: <Reveal delay={150} direction="left"> ...content... </Reveal>
  */
-const Reveal = ({ children, delay = 0, className = '' }) => {
-  const ref = useRef(null)
-  const [visible, setVisible] = useState(false)
-
-  useEffect(() => {
-    const node = ref.current
-    if (!node) return
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true)
-          observer.unobserve(node)
-        }
-      },
-      { threshold: 0.15 }
-    )
-
-    observer.observe(node)
-    return () => observer.disconnect()
-  }, [])
+const Reveal = ({ children, delay = 0, direction = 'up', className = '', as: Tag = 'div' }) => {
+  const [ref, inView] = useInView({ threshold: 0.15 })
 
   return (
-    <div
+    <Tag
       ref={ref}
-      className={`reveal ${visible ? 'is-visible' : ''} ${className}`}
+      data-dir={direction}
+      className={`reveal ${inView ? 'is-visible' : ''} ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
-    </div>
+    </Tag>
   )
 }
 

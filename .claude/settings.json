@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(BROWSER=none npx react-scripts start)",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/my_portfolio)",
+      "Bash(curl -s http://localhost:3000/my_portfolio)",
+      "mcp__plugin_playwright_playwright__browser_hover",
+      "mcp__plugin_playwright_playwright__browser_type",
+      "Bash(ls ~/Downloads 2>/dev/null | head -30; echo \"---\"; ls ~/Desktop 2>/dev/null | head -20; echo \"--- documents\"; ls ~/Documents 2>/dev/null | head -20)",
+      "Read(//c/Users/USER/Downloads/**)",
+      "Read(//c/Users/USER/Desktop/**)",
+      "Read(//c/Users/USER/Documents/**)",
+      "Bash(cp ~/Desktop/AHMED-FARAG.pdf public/Ahmed-Farag-CV.pdf && ls -la public/)",
+      "Bash(node -p \"require\\('./node_modules/tailwindcss/package.json'\\).version\")",
+      "Bash(curl -s -o /dev/null -w \"CV: %{http_code} %{content_type} %{size_download} bytes\\\\n\" http://localhost:3000/my_portfolio/Ahmed-Farag-CV.pdf)",
+      "Bash(curl -s \"https://itunes.apple.com/lookup?id=6754603437\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\)['results'][0]; print\\(d['trackName']\\); print\\(d.get\\('artworkUrl512'\\)\\); [print\\(u\\) for u in d.get\\('screenshotUrls',[]\\)[:3]]\")",
+      "Bash(curl -s -A \"Mozilla/5.0\" \"https://play.google.com/store/apps/details?id=com.techvillage.airgate\")",
+      "Bash(grep -o 'https://play-lh\\\\.googleusercontent\\\\.com/[A-Za-z0-9_=-]\\\\{40,\\\\}')",
+      "Bash(curl -s \"https://itunes.apple.com/lookup?id=6754603437&country=kw\")",
+      "Bash(python -c ' *)",
+      "Bash(curl -sL -o work-airgate.jpg \"https://play-lh.googleusercontent.com/uCHwrqUrNTPGTD2VJM0If97Iq60d64mb_F4TjM93aQlz0OI5hp5YePTfXpFk24mmiujP_VfCQwOSaJNFs4XQPA=w1080\")",
+      "Bash(curl -sL -o work-elearning.jpg \"https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4b/89/ac/4b89acf4-d625-6c59-9a45-8428dcecf5ac/EMP-01.png/900x0w.jpg\")",
+      "Bash(curl -sL -o work-store.jpg \"https://opengraph.githubassets.com/1/AhmedFarag12/laravel_store\")",
+      "Bash(curl -sL -o work-crm.jpg \"https://opengraph.githubassets.com/1/AhmedFarag12/node-crm-application\")",
+      "Bash(file work-*.jpg)",
+      "Bash(curl -sL -o work-airgate.jpg \"https://play-lh.googleusercontent.com/uCHwrqUrNTPGTD2VJM0If97Iq60d64mb_F4TjM93aQlz0OI5hp5YePTfXpFk24mmiujP_VfCQwOSaJNFs4XQPA=w640\")",
+      "Bash(curl -sL -o work-elearning.jpg \"https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4b/89/ac/4b89acf4-d625-6c59-9a45-8428dcecf5ac/EMP-01.png/600x0w.jpg\")",
+      "Bash(mv work-store.jpg work-store.png)",
+      "Bash(mv work-crm.jpg work-crm.png)",
+      "Bash(curl -s \"https://api.github.com/repos/AhmedFarag12/laravel_store/contents\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/AhmedFarag12/laravel_store/master/README.md\")",
+      "Bash(file src/assets/*.png)",
+      "Bash(curl -s \"https://api.github.com/repos/laravel/art/git/trees/master?recursive=1\")",
+      "Bash(curl -sL -o src/assets/laravel.svg \"https://raw.githubusercontent.com/laravel/art/master/laravel-logo.svg\")",
+      "Bash(curl -sL -o src/assets/php.svg \"https://www.php.net/images/logos/new-php-logo.svg\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\USER\\Desktop"
+    ]
+  }
+}

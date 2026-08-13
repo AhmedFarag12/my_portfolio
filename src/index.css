@@ -7,10 +7,19 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Guards against a stray sideways scroll from the full-bleed fixed bars.
+       `clip` avoids creating a scroll container; `hidden` is the older fallback. */
+    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   body {
     @apply font-sans text-slatey bg-navy antialiased;
+  }
+
+  /* Sections sit below the fixed navbar when jumped to via anchor */
+  section[id] {
+    scroll-margin-top: 90px;
   }
 
   /* Custom scrollbar */
@@ -57,6 +66,84 @@
     @apply bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-2xl;
   }
 
+  /* Cursor-tracked 3D tilt. The hook writes --rx / --ry / --s. */
+  .tilt {
+    transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg))
+      scale(var(--s, 1));
+    transform-style: preserve-3d;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s,
+      box-shadow 0.3s;
+    will-change: transform;
+  }
+
+  /* Soft highlight that follows the cursor across a card (--mx / --my).
+     Only the pseudo-element opts out of hit-testing — putting pointer-events
+     on .glare itself would disable hover on any card that carries the class. */
+  .glare::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      220px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(56, 189, 248, 0.16),
+      transparent 65%
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+  /* Two cases: the glare sits on a child of the hovered card (Work), or the
+     hovered card carries the class itself (Skills). */
+  .group:hover .glare::after,
+  .glare:hover::after {
+    opacity: 1;
+  }
+
+  /* Faint blueprint grid behind the hero */
+  .grid-bg {
+    background-image: linear-gradient(rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56, 189, 248, 0.06) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(circle at 30% 30%, black, transparent 70%);
+    -webkit-mask-image: radial-gradient(circle at 30% 30%, black, transparent 70%);
+  }
+
+  /* Cursor spotlight on the hero (--spot-x / --spot-y set on mousemove) */
+  .spotlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      420px circle at var(--spot-x, -999px) var(--spot-y, -999px),
+      rgba(56, 189, 248, 0.09),
+      transparent 70%
+    );
+    transition: opacity 0.3s ease;
+  }
+
+  /* Tailwind 3.2 has no line-clamp utility yet */
+  .clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Nav item with an underline that grows from the centre */
+  .nav-link {
+    @apply relative cursor-pointer px-4 py-2 text-sm text-slatey transition-colors duration-200 hover:text-accent;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute left-4 right-4 bottom-1 h-px origin-center scale-x-0 bg-accent transition-transform duration-300;
+  }
+  .nav-link:hover::after,
+  .nav-link.is-active::after {
+    @apply scale-x-100;
+  }
+
   /* Buttons */
   .btn-primary {
     @apply inline-flex items-center gap-2 rounded-lg bg-accent/10 border border-accent px-6 py-3 font-medium text-accent transition-all duration-300 hover:bg-accent/20 hover:shadow-glow hover:-translate-y-0.5;
@@ -81,7 +168,50 @@
   transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
+.reveal[data-dir="left"] {
+  transform: translateX(-32px);
+}
+.reveal[data-dir="right"] {
+  transform: translateX(32px);
+}
+.reveal[data-dir="zoom"] {
+  transform: scale(0.94);
+}
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+}
+
+/* Infinite marquee — the track holds the list twice, so -50% loops seamlessly */
+.marquee-wrap:hover .marquee,
+.marquee-wrap:focus-within .marquee {
+  animation-play-state: paused;
+}
+
+/* Respect users who ask for less motion: show everything, skip the movement */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .marquee {
+    animation: none;
+  }
+  .tilt {
+    transform: none;
+  }
+  .spotlight::before,
+  .glare::after {
+    display: none;
+  }
 }
