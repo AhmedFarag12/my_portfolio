@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.9c4b9d91.css",
-    "main.js": "/my_portfolio/static/js/main.334b3a51.js",
+    "main.js": "/my_portfolio/static/js/main.7d42f016.js",
     "static/media/pizza.jpg": "/my_portfolio/static/media/pizza.f2f9b9a49128f877c57f.jpg",
+    "static/media/work-fullday.png": "/my_portfolio/static/media/work-fullday.9a5157d84aee9f24a0e1.png",
     "static/media/work-mas-fm.jpg": "/my_portfolio/static/media/work-mas-fm.514205267ecd6581d69a.jpg",
     "static/media/Reservation.png": "/my_portfolio/static/media/Reservation.fd8714559ae56341cf45.png",
     "static/media/work-elearning.jpg": "/my_portfolio/static/media/work-elearning.ea8f3f1ca98305e6bf4b.jpg",
@@ -25,10 +26,10 @@
     "index.html": "/my_portfolio/index.html",
     "static/media/laravel.svg": "/my_portfolio/static/media/laravel.b020145a48b5b6d72c37d57a0716426b.svg",
     "main.9c4b9d91.css.map": "/my_portfolio/static/css/main.9c4b9d91.css.map",
-    "main.334b3a51.js.map": "/my_portfolio/static/js/main.334b3a51.js.map"
+    "main.7d42f016.js.map": "/my_portfolio/static/js/main.7d42f016.js.map"
   },
   "entrypoints": [
     "static/css/main.9c4b9d91.css",
-    "static/js/main.334b3a51.js"
+    "static/js/main.7d42f016.js"
   ]
 }
