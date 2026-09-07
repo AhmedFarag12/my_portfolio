@@ -14,6 +14,7 @@ import MasFm from '../assets/work-mas-fm.jpg'
 import Nesba from '../assets/work-nesba.jpg'
 import Elearning from '../assets/work-elearning.jpg'
 import Airgate from '../assets/work-airgate.jpg'
+import FullDay from '../assets/work-fullday.png'
 import LaravelLogo from '../assets/laravel.svg'
 import NodeLogo from '../assets/node.png'
 
@@ -27,6 +28,15 @@ const LINK_KINDS = {
 
 const projects = [
   // Company work — from the résumé.
+  {
+    title: 'Full Day',
+    kind: 'work',
+    img: FullDay,
+    tags: ['Laravel'],
+    links: [{ type: 'live', href: 'https://hotel24.nahrdev.com/' }],
+    summary:
+      'Day-use hotel booking platform for Saudi Arabia, letting guests book stays by the hour or full day and hosts manage pricing per window.',
+  },
   {
     title: 'MAS-FM',
     kind: 'work',
@@ -91,6 +101,16 @@ const projects = [
     links: [{ type: 'code', href: 'https://github.com/AhmedFarag12/node-crm-application' }],
     summary:
       'CRM for customers and sales built on Node.js, Express and MongoDB — a full REST API for users, customers and leads with JWT auth, password hashing and admin/sales/user roles.',
+  },
+  {
+    title: 'E-Commerce Store',
+    kind: 'work',
+    img: NodeLogo,
+    fit: 'logo',
+    tags: ['Node.js'],
+    links: [{ type: 'live', href: 'https://e-commerce-node-js-xi.vercel.app/' }],
+    summary:
+      'E-commerce storefront with product catalog, cart and checkout flow, built on Node.js.',
   },
 
   // Personal projects — public on GitHub.
