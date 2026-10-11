@@ -1,7 +1,6 @@
 import React from 'react'
 import Reveal from './Reveal'
 import useTilt from '../hooks/useTilt'
-import useInView from '../hooks/useInView'
 
 import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
@@ -12,31 +11,38 @@ import PHP from '../assets/php.svg'
 import Laravel from '../assets/laravel.svg'
 import Python from '../assets/python.png'
 import Node from '../assets/node.png'
+import Nest from '../assets/nest.svg'
 import Mongo from '../assets/mongo.png'
+import MySQL from '../assets/mysql.svg'
+import Redis from '../assets/redis.svg'
+import Docker from '../assets/docker.svg'
 import Tailwind from '../assets/tailwind.png'
 import Firebase from '../assets/firebase.png'
 
-// Levels are a self-assessment — tweak the numbers freely.
 const skills = [
-  { name: 'PHP', img: PHP, level: 92 },
-  { name: 'Laravel', img: Laravel, level: 90 },
-  { name: 'Node.js', img: Node, level: 80 },
-  { name: 'JavaScript', img: JavaScript, level: 82 },
-  { name: 'React', img: react, level: 75 },
-  { name: 'MongoDB', img: Mongo, level: 72 },
-  { name: 'Python', img: Python, level: 70 },
-  { name: 'HTML', img: HTML, level: 95 },
-  { name: 'CSS', img: CSS, level: 88 },
-  { name: 'Tailwind', img: Tailwind, level: 85 },
-  { name: 'Firebase', img: Firebase, level: 68 },
-  { name: 'GitHub', img: Github, level: 85 },
+  { name: 'PHP', img: PHP },
+  { name: 'Laravel', img: Laravel },
+  { name: 'Node.js', img: Node },
+  { name: 'Nest.js', img: Nest },
+  { name: 'JavaScript', img: JavaScript },
+  { name: 'React', img: react },
+  { name: 'MySQL', img: MySQL },
+  { name: 'MongoDB', img: Mongo },
+  { name: 'Redis', img: Redis },
+  { name: 'Docker', img: Docker },
+  { name: 'Python', img: Python },
+  { name: 'HTML', img: HTML },
+  { name: 'CSS', img: CSS },
+  { name: 'Tailwind', img: Tailwind },
+  { name: 'Firebase', img: Firebase },
+  { name: 'GitHub', img: Github },
 ]
 
 const stack = [
   { group: 'Languages', items: ['PHP', 'JavaScript', 'Python'] },
   {
     group: 'Back-end',
-    items: ['Laravel', 'Node.js', 'Express.js', 'REST APIs', 'MVC', 'Queue Workers', 'WebSockets', 'Cron Jobs'],
+    items: ['Laravel', 'Node.js', 'Express.js', 'Nest.js', 'REST APIs', 'MVC', 'Queue Workers', 'WebSockets', 'Cron Jobs'],
   },
   {
     group: 'Front-end',
@@ -54,14 +60,13 @@ const stack = [
 ]
 
 const marquee = [
-  'PHP', 'Laravel', 'Node.js', 'Express.js', 'REST APIs', 'MySQL', 'MongoDB', 'Redis',
+  'PHP', 'Laravel', 'Node.js', 'Express.js', 'Nest.js', 'REST APIs', 'MySQL', 'MongoDB', 'Redis',
   'Docker', 'Nginx', 'AWS', 'RabbitMQ', 'WebSockets', 'React.js', 'Vue.js', 'Livewire',
   'Tailwind CSS', 'Twilio', 'Firebase', 'Postman',
 ]
 
 const SkillCard = ({ skill }) => {
   const tilt = useTilt()
-  const [meterRef, meterInView] = useInView({ threshold: 0.4 })
 
   return (
     <div
@@ -75,19 +80,6 @@ const SkillCard = ({ skill }) => {
         alt={`${skill.name} logo`}
       />
       <p className="font-medium text-slatey-light">{skill.name}</p>
-
-      {/* Proficiency meter — fills the first time the card scrolls into view */}
-      <div ref={meterRef} className="w-full">
-        <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/10">
-          <div
-            className="h-full rounded-full bg-gradient-to-r from-accent to-cyan-300 transition-[width] duration-1000 ease-out"
-            style={{ width: meterInView ? `${skill.level}%` : '0%' }}
-          />
-        </div>
-        <p className="mt-2 text-center font-mono text-xs text-slatey-dark opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          {skill.level}%
-        </p>
-      </div>
     </div>
   )
 }
@@ -101,7 +93,6 @@ const Skills = () => {
             <span className="section-num">02.</span>
             Skills
           </h2>
-          <p className="font-mono text-accent/80 -mt-4 mb-10">{'//'} hover a card to see the level</p>
         </Reveal>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
