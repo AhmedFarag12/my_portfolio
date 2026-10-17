@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.5d932886.css",
-    "main.js": "/my_portfolio/static/js/main.771f85bb.js",
+    "main.js": "/my_portfolio/static/js/main.949825b8.js",
     "static/media/pizza.jpg": "/my_portfolio/static/media/pizza.f2f9b9a49128f877c57f.jpg",
     "static/media/work-fullday.png": "/my_portfolio/static/media/work-fullday.9a5157d84aee9f24a0e1.png",
     "static/media/work-mas-fm.jpg": "/my_portfolio/static/media/work-mas-fm.514205267ecd6581d69a.jpg",
@@ -9,6 +9,7 @@
     "static/media/work-elearning.jpg": "/my_portfolio/static/media/work-elearning.ea8f3f1ca98305e6bf4b.jpg",
     "static/media/api.png": "/my_portfolio/static/media/api.868da1cd5d2b93380429.png",
     "static/media/react.png": "/my_portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/aws.png": "/my_portfolio/static/media/aws.95bdee6b9922c9b94fd5.png",
     "static/media/node.png": "/my_portfolio/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/work-nesba.jpg": "/my_portfolio/static/media/work-nesba.97174f43d8253abb38a1.jpg",
     "static/media/mongo.png": "/my_portfolio/static/media/mongo.2a1528ddc31d4ce8518d.png",
@@ -25,15 +26,18 @@
     "static/media/php.svg": "/my_portfolio/static/media/php.c68bf823f25c4a411c5ff0cbd7c27b71.svg",
     "static/media/nest.svg": "/my_portfolio/static/media/nest.850418d4023a0f6e4300c105b5e3821d.svg",
     "static/media/mysql.svg": "/my_portfolio/static/media/mysql.a8f522558e4d9e63831f596a3b0af9ae.svg",
+    "static/media/apache.svg": "/my_portfolio/static/media/apache.de58a5885561d0c46854b7a8aa4e1ee1.svg",
     "static/media/docker.svg": "/my_portfolio/static/media/docker.f9f97b60eb161535b80d3d8ec8e54560.svg",
     "index.html": "/my_portfolio/index.html",
     "static/media/redis.svg": "/my_portfolio/static/media/redis.92b12553cfd772408fbd336068157125.svg",
     "static/media/laravel.svg": "/my_portfolio/static/media/laravel.b020145a48b5b6d72c37d57a0716426b.svg",
+    "static/media/git.svg": "/my_portfolio/static/media/git.dddd54b0733467dc7d85a51d2bd0ff56.svg",
+    "static/media/nginx.svg": "/my_portfolio/static/media/nginx.b5bb5653bd9857c28b8a4119fc5ab9bc.svg",
     "main.5d932886.css.map": "/my_portfolio/static/css/main.5d932886.css.map",
-    "main.771f85bb.js.map": "/my_portfolio/static/js/main.771f85bb.js.map"
+    "main.949825b8.js.map": "/my_portfolio/static/js/main.949825b8.js.map"
   },
   "entrypoints": [
     "static/css/main.5d932886.css",
-    "static/js/main.771f85bb.js"
+    "static/js/main.949825b8.js"
   ]
 }
