@@ -9,7 +9,7 @@ const stats = [
   { value: 2, suffix: '', label: 'Companies worked with' },
 ]
 
-const tech = ['PHP', 'Laravel', 'Node.js', 'REST APIs', 'MySQL', 'Docker']
+const tech = ['PHP', 'Laravel', 'Node.js', 'REST APIs', 'MySQL', 'Docker', 'Nginx', 'AWS']
 
 const About = () => {
   return (
@@ -26,7 +26,7 @@ const About = () => {
           <Reveal direction="left" className="md:col-span-2 space-y-4 leading-relaxed">
             <p>
               Hi, I&apos;m <span className="text-slatey-light font-semibold">Ahmed</span> —
-              a <span className="text-accent">Software Engineer</span> focused on designing and
+              a <span className="text-accent">Software &amp; DevOps Engineer</span> focused on designing and
               building efficient, scalable and reliable server-side applications.
             </p>
             <p>

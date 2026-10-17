@@ -16,6 +16,10 @@ import Mongo from '../assets/mongo.png'
 import MySQL from '../assets/mysql.svg'
 import Redis from '../assets/redis.svg'
 import Docker from '../assets/docker.svg'
+import Nginx from '../assets/nginx.svg'
+import Apache from '../assets/apache.svg'
+import AWS from '../assets/aws.png'
+import Git from '../assets/git.svg'
 import Tailwind from '../assets/tailwind.png'
 import Firebase from '../assets/firebase.png'
 
@@ -30,6 +34,10 @@ const skills = [
   { name: 'MongoDB', img: Mongo },
   { name: 'Redis', img: Redis },
   { name: 'Docker', img: Docker },
+  { name: 'Nginx', img: Nginx },
+  { name: 'Apache', img: Apache },
+  { name: 'AWS', img: AWS },
+  { name: 'Git', img: Git },
   { name: 'Python', img: Python },
   { name: 'HTML', img: HTML },
   { name: 'CSS', img: CSS },

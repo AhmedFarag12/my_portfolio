@@ -5,7 +5,7 @@ import Magnetic from './Magnetic'
 import useTypewriter from '../hooks/useTypewriter'
 import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion'
 
-const ROLES = ['back-end systems', 'REST APIs', 'Laravel apps', 'Node.js services', 'database schemas']
+const ROLES = ['back-end systems', 'REST APIs', 'Laravel apps', 'Node.js services', 'Docker deployments', 'cloud infrastructure']
 const longestRole = ROLES.reduce((a, b) => (b.length > a.length ? b : a))
 
 const Home = () => {
@@ -60,7 +60,7 @@ const Home = () => {
         </h2>
 
         <p className="mt-6 max-w-[640px] text-slatey leading-relaxed animate-fadeUp" style={{ animationDelay: '300ms' }}>
-          I&apos;m a Software Engineer based in Cairo, Egypt, specialised in PHP &amp; Laravel
+          I&apos;m a Software &amp; DevOps Engineer based in Cairo, Egypt, specialised in PHP &amp; Laravel
           and Node.js. I design and build efficient, scalable server-side applications —
           clean architecture, solid database schemas and RESTful APIs.
         </p>
