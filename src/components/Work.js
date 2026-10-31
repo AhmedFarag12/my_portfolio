@@ -17,6 +17,7 @@ import Airgate from '../assets/work-airgate.jpg'
 import FullDay from '../assets/work-fullday.png'
 import LaravelLogo from '../assets/laravel.svg'
 import NodeLogo from '../assets/node.png'
+import NestLogo from '../assets/nest.svg'
 
 // How each link renders: icon + label.
 const LINK_KINDS = {
@@ -28,6 +29,19 @@ const LINK_KINDS = {
 
 const projects = [
   // Company work — from the résumé.
+  {
+    title: 'Zaker — Online Learning',
+    kind: 'work',
+    img: NestLogo,
+    fit: 'logo',
+    tags: ['Node.js', 'REST APIs'],
+    links: [
+      { type: 'live', href: 'https://zakereg.com' },
+      { type: 'code', href: 'https://github.com/AhmedFarag12/LMS-System' },
+    ],
+    summary:
+      'Online learning platform for students and teachers on NestJS and MongoDB, serving real users. Self-hosted on an Ubuntu VPS with Docker and Dokploy, with Bunny.net Stream for video.',
+  },
   {
     title: 'Full Day',
     kind: 'work',
