@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.5d932886.css",
-    "main.js": "/my_portfolio/static/js/main.055c70df.js",
+    "main.js": "/my_portfolio/static/js/main.ac122aea.js",
     "static/media/pizza.jpg": "/my_portfolio/static/media/pizza.f2f9b9a49128f877c57f.jpg",
+    "static/media/work-zaker.png": "/my_portfolio/static/media/work-zaker.3a2e4877c27afe7ecc0b.png",
     "static/media/work-fullday.png": "/my_portfolio/static/media/work-fullday.9a5157d84aee9f24a0e1.png",
     "static/media/work-mas-fm.jpg": "/my_portfolio/static/media/work-mas-fm.514205267ecd6581d69a.jpg",
     "static/media/Reservation.png": "/my_portfolio/static/media/Reservation.fd8714559ae56341cf45.png",
@@ -34,10 +35,10 @@
     "static/media/git.svg": "/my_portfolio/static/media/git.dddd54b0733467dc7d85a51d2bd0ff56.svg",
     "static/media/nginx.svg": "/my_portfolio/static/media/nginx.b5bb5653bd9857c28b8a4119fc5ab9bc.svg",
     "main.5d932886.css.map": "/my_portfolio/static/css/main.5d932886.css.map",
-    "main.055c70df.js.map": "/my_portfolio/static/js/main.055c70df.js.map"
+    "main.ac122aea.js.map": "/my_portfolio/static/js/main.ac122aea.js.map"
   },
   "entrypoints": [
     "static/css/main.5d932886.css",
-    "static/js/main.055c70df.js"
+    "static/js/main.ac122aea.js"
   ]
 }
