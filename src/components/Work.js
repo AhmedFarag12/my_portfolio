@@ -17,7 +17,7 @@ import Airgate from '../assets/work-airgate.jpg'
 import FullDay from '../assets/work-fullday.png'
 import LaravelLogo from '../assets/laravel.svg'
 import NodeLogo from '../assets/node.png'
-import NestLogo from '../assets/nest.svg'
+import Zaker from '../assets/work-zaker.png'
 
 // How each link renders: icon + label.
 const LINK_KINDS = {
@@ -32,8 +32,7 @@ const projects = [
   {
     title: 'Zaker — Online Learning',
     kind: 'work',
-    img: NestLogo,
-    fit: 'logo',
+    img: Zaker,
     tags: ['Node.js', 'REST APIs'],
     links: [
       { type: 'live', href: 'https://zakereg.com' },
